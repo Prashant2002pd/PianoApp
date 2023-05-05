@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 
-void main() => runApp(const XylophoneApp());
+void main() {
+  runApp( XylophoneApp());
+}
 
 class XylophoneApp extends StatelessWidget {
-  const XylophoneApp({super.key});
+
 
   Widget buildKey({required int num , required Color colours}){
+
     return Expanded(child: TextButton(
       onPressed: (){
         playnum(num);
